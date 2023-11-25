@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Open+Sans:ital,wght@1,300&display=swap");
+#day {
+  font-size: 145px; }
+  #day .day {
+    font-size: 15px;
+    text-align: center;
+    color: #a7a7a7;
+    font-family: "Open Sans", sans-serif; }
+
+#month {
+  font-size: 145px; }
+  #month .month {
+    font-size: 15px;
+    text-align: center;
+    color: #a7a7a7;
+    font-family: "Open Sans", sans-serif; }
+
+#year {
+  font-size: 145px; }
+  #year .year {
+    font-size: 15px;
+    text-align: center;
+    color: #a7a7a7;
+    font-family: "Open Sans", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #222;
+  font-family: "Nova Mono", monospace; }
+
+.date-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .date-row .date-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: .4em;
+    box-shadow: 10px 10px 15px #000;
+    transition: transform ease-in 1s; }
+    .date-row .date-col .dot {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      width: 25px;
+      height: 25px;
+      border-radius: 5em;
+      margin: 10px;
+      box-shadow: 0px 5px 5px #787878;
+      background-color: #222;
+      transition: transform 2s; }
+    .date-row .date-col .line {
+      width: 8px;
+      height: 50px;
+      margin-bottom: 10px;
+      background-color: #a83131;
+      border-radius: 5em;
+      box-shadow: 0px 0px 7px #222;
+      transition: transform 2s; }
+    .date-row .date-col:hover {
+      transform: rotate(8deg); }
+      .date-row .date-col:hover .dot, .date-row .date-col:hover .line {
+        transform: rotate(-10deg); }
